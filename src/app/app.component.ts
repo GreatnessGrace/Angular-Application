@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
+  username = '';
+
+  showAlert() {
+    alert('Button Clicked!');
+  }
 }
+
+
