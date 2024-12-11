@@ -1,0 +1,15 @@
+<!-- Conditional Rendering -->
+<button (click)="toggleMessage()">Toggle Message</button>
+<p *ngIf="isVisible">Hello, Angular!</p>
+
+<!-- Dynamic List -->
+<ul>
+  <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+</ul>
+
+<!-- Dynamic Styling -->
+<button (click)="toggleStyle()">Change Style</button>
+<p 
+  [ngStyle]="{'color': isHighlighted ? 'red' : 'black', 'font-weight': isHighlighted ? 'bold' : 'normal'}">
+  This text changes style.
+</p>
